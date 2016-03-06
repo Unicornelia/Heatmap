@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>HotOnTwitter</title>
+
+   <!-- Bootstrap Core CSS -->
+   <link href="bootstrap.min.css" rel="stylesheet">
+
+   <!-- Custom CSS -->
+   <link href="heatmap.css" rel="stylesheet" type="text/css">
+
+   <!-- Custom Fonts -->
+   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+   <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+   <!--Include mapbox.js and CSS in your HTML header and call L.mapbox.map('map', 'mapbox.streets') to load your first map. View simple example-->
+
+   <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
+   <link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
+
+</head>
+
+<body>
+
+   <!-- Navigation -->
+   <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <div class="container topnav">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand topnav" href="#">Projects</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="about.html" target="_blank">About</a>
+                </li>
+                <li>
+                    <a href="work.html" target="_blank">Behind the idea</a>
+                </li>
+                <li>
+                    <a href="#contact" target="_blank">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+<!-- Header -->
+<a name="about"></a>
+<div class="intro-header">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <h1>Hot on Twitter</h1>
+                    <h3>Find the hottest topics in your area</h3>
+                    <h4>Scroll down and start exploring our heatmap</h4>
+                    <hr class="intro-divider">
+                    <ul class="list-inline intro-social-buttons">
+                        <li>
+                            <a href="https://twitter.com/Corneliability" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Unicornelia" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.intro-header -->
+
+<!-- Page Content -->
+
+<a  name="services"></a>
+<div class="content-section-a">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Creators</h2>
+                <p class="lead">Ellie Thomas and Kornelia Szabo<a target="_blank" a href="work.html"><p>Tap here</p></a>
+            </div>
+            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <img class="img-responsive" src="bird.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+</div>
+
+<!--Content b starts here-->
+
+<div class="content-section-b">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Smoking hot topics on Twitter</h2>
+                <p class="lead">Explore your area (or somebody else's!) for popular topics on Twitter!</p>
+                <div id='map'></div>
+                <!--<script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoidW5pY29ybmVsaWEiLCJhIjoiY2lsY2hvajVsMDA3NXdnbHpqaWZqaTNmbiJ9.yr-_GVPhMAVONAhT74DJkg';
+                var map = new mapboxgl.Map({
+                    container: 'map', // container id
+                    style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
+                    center: [-74.50, 40], // starting position
+                    zoom: 9 // starting zoom
+                });
+            </script>-->
+            <iframe
+            width="600"
+            height="450"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBHOtZTc6HKkOVIkBpoE0VMvN_j1EE4p74&q=Space+Needle,Seattle+WA" allowfullscreen>
+        </iframe>
+    </div>
+    <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+        <img class="img-responsive" src="" alt="">
+    </div>
+</div>
+
+</div>
+<!-- /.container -->
+
+</div>
+<!-- /.content-section-b -->
+
+
+
+
+    <a  name="contact"></a>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Get in touch with our Team</h2>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="index.html" target="_blank">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="About us.html" target="_blank">About us</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact" target="_blank">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; Elli and Kornelia. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+
+</html>
