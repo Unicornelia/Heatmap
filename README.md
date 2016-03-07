@@ -1,2 +1,3 @@
-# Heatmap
-Twitter heat map with API
+Mapbox Dark
+===========
+Dark basemap style for [Mapbox Studio](https://github.com/mapbox/mapbox-studio).
