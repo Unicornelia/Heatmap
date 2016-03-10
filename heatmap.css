@@ -128,7 +128,7 @@ h6 {
 }
 
 .map {
-    position: absolute; 
+    position: center; 
     top: 0; 
     bottom: 0; 
     width: 100%; 
