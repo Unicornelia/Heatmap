@@ -15,7 +15,7 @@ app = Flask("MyApp")
 def hello():
     return render_template("index.html")
 
-@app.route("/signup", methods=['GET'])
+@app.route("/", methods=['GET'])
 def sign_up():
     form_data = request.form
     searchterm = form_data['searchterm']
