@@ -10,6 +10,7 @@ import unicodecsv
 
 app = Flask("MyApp")
 
+app.debug = True
 
 @app.route("/")
 def hello():
