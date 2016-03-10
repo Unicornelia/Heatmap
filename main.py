@@ -36,9 +36,9 @@ searchterm="trump"
 
 result = tweepy.Cursor(twitter_api.search, q=searchterm).items(500)
 
-for tweet in result: 
-	if tweet.place != None:
-		print tweet.text, tweet.place.bounding_box.coordinates[0][0]
+#for tweet in result: 
+#	if tweet.place != None:
+#		print tweet.text, tweet.place.bounding_box.coordinates[0][0]
 
 
 #write results as csv file
