@@ -32,25 +32,38 @@ h6 {
 }
 
 .intro-header {
-    padding-top: 5px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 2px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 25px;
-    text-align: center;
+    text-align: left;
     color: #1d1d1e;
     background: url(metal2.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .intro-message {
-    position: relative;
-    padding-top: 10%;
+    position: absolute;
+    padding-top: 35%;
     padding-bottom: 20%;
 }
 
 .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    font-size: 10em;
+    color: white;
+}
+
+.intro-map {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
     font-size: 5em;
     color: white;
+    position: relative;
+    padding-top: 10%;
+    padding-left: 2%;
+    top: 0; 
+    bottom: 0; 
+    width: 100%; 
 }
 
 .intro-divider {
@@ -183,4 +196,8 @@ footer {
 p.copyright {
     margin: 15px 0 0;
     color: #DADADB;
+}
+
+a {
+    font-size: 15px;
 }
