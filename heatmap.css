@@ -18,48 +18,51 @@ h6 {
 
 .topnav {
     font-size: 14px;
-    color:  #DADADB;
-    background-color: #1B1D22;
+    background-color: #050506;
 }
 
 .lead {
     font-size: 18px;
     font-weight: 400;
-    color: #DADADB;
+    color: #1d1d1e;
+}
+
+.navbar {
+   color: #DADADB; 
 }
 
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 10px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
-    color: #DADADB;
-    background: url(space3.jpg) no-repeat center center;
+    color: #1d1d1e;
+    background: url(metal2.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
+    padding-top: 10%;
     padding-bottom: 20%;
 }
 
 .intro-message > h1 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
     font-size: 5em;
-    color: #DADADB;
+    color: white;
 }
 
 .intro-divider {
-    width: 400px;
+    width: 500px;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
     color: #DADADB;
 }
 
 .intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    color: #DADADB;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+    color: #cdcdcd;
 }
 
 @media(max-width:767px) {
@@ -163,7 +166,7 @@ h6 {
     ul.banner-social-buttons > li {
         display: block;
         margin-bottom: 20px;
-        padding: 0;
+        padding: 10;
     }
 
     ul.banner-social-buttons > li:last-child {
