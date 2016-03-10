@@ -32,8 +32,8 @@ h6 {
 }
 
 .intro-header {
-    padding-top: 10px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
+    padding-top: 5px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 25px;
     text-align: center;
     color: #1d1d1e;
     background: url(metal2.jpg) no-repeat center center;
