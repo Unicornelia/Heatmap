@@ -8,6 +8,13 @@
 
 	<title>Twitteronia</title>
 
+    <script type="text/javascript">
+    //templatecoordinates is the array of tweet coordinates defined as a variable
+    //the array includes arrays of two coordinates each
+      var coordinates = {{ templatecoordinates }};
+      console.log(coordinates);
+    </script>
+
    <!-- Bootstrap Core CSS -->
 
    <link href="{{ url_for("static", filename="css/bootstrap.min.css") }}" rel="stylesheet">
