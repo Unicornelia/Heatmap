@@ -108,15 +108,18 @@ var map = L.mapbox.map('map', 'unicornelia.pbc2l5ki'),
     heat = L.heatLayer([], { maxZoom: 12 }).addTo(map);
 
 // We're just using a featureLayer to pull marker data from Mapbox -
-// this is not added to the map.
-var layer = L.mapbox.featureLayer('examples.map-zr0njcqy').on('ready', function() {
-    // Zoom the map to the bounds of the markers.
-    map.fitBounds(layer.getBounds());
+// // this is not added to the map.
+// var layer = L.mapbox.featureLayer(templatecoordinates).on('ready', function() {
+//     // Zoom the map to the bounds of the markers.
+//     map.fitBounds(layer.getBounds());
     // Add each marker point to the heatmap.
-    layer.eachLayer(function(l) {
-        heat.addLatLng(l.getLatLng());
-    });
-});
+
+for (var i = 0; i < coordinates.length; i++) {
+    var latlng = L.latLng(coordinates[i][0], coordinates[i][1]);
+    console.log('Adding', latlng, 'to the map.');
+    heat.addLatLng(latlng);
+}    
+// });
 </script>
 
                     </div>
