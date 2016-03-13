@@ -201,3 +201,8 @@ p.copyright {
 a {
     font-size: 15px;
 }
+
+#map {
+    height: 400px;
+    width: 100%;
+}
