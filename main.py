@@ -15,8 +15,8 @@ app.debug = True
 
 @app.route("/")
 def hello():
-    tweetcoordinates = pull_tweets()
-    return render_template("index.html", templatecoordinates=tweetcoordinates)
+    coordinates = pull_tweets()
+    return render_template("index.html", templatecoordinates=coordinates)
 
 
 
@@ -40,7 +40,7 @@ def pull_tweets():
     twitter_api = tweepy.API(auth)
     searchterm="trump"
 
-    result = tweepy.Cursor(twitter_api.search, q=searchterm).items(500)
+    result = tweepy.Cursor(twitter_api.search, q=searchterm).items(5000)
 
     for tweet in result: 
         if tweet.place != None:
@@ -49,6 +49,18 @@ def pull_tweets():
 
     return coordinates
 
+
+
+#splitting up the coordinates array so that we can flip it round. THIS REALLY DOESN'T WORK
+
+# def splitcoordinates(l, n):
+    
+#     for i in tweetcoordinates(0, l, n):
+#         return [n,l]
+
+# print splitcoordinates
+
+#debugging
 
 if __name__ == "__main__":
     app.debug = True

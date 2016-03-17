@@ -105,7 +105,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoidW5pY29ybmVsaWEiLCJhIjoiY2lsY2hvajVsMDA3NXdnb
 var map = L.mapbox.map('map', 'unicornelia.pbc2l5ki'),
     // The maxZoom states which zoom the markers are fully opaque at -
     // in this case, there are few markers far apart, so we set it low.
-    heat = L.heatLayer([], { maxZoom: 12 }).addTo(map);
+    heat = L.heatLayer([], { maxZoom: 4 }).addTo(map);
 
 // We're just using a featureLayer to pull marker data from Mapbox -
 // // this is not added to the map.
@@ -114,8 +114,10 @@ var map = L.mapbox.map('map', 'unicornelia.pbc2l5ki'),
 //     map.fitBounds(layer.getBounds());
     // Add each marker point to the heatmap.
 
+
+//creates a loop where i is each separate tweet 
 for (var i = 0; i < coordinates.length; i++) {
-    var latlng = L.latLng(coordinates[i][0], coordinates[i][1]);
+    var latlng = L.latLng(coordinates[i][1], coordinates[i][0]);
     console.log('Adding', latlng, 'to the map.');
     heat.addLatLng(latlng);
 }    
