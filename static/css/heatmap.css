@@ -36,7 +36,7 @@ h6 {
     padding-bottom: 25px;
     text-align: left;
     color: #1d1d1e;
-    background: url(metal2.jpg) no-repeat center center;
+    background: url(../images/metal2.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -205,4 +205,10 @@ a {
 #map {
     height: 400px;
     width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 95%;
+    }
 }
