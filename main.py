@@ -17,6 +17,14 @@ app.debug = True
 def hello():
     return render_template("index.html", templatecoordinates=[])
 
+@app.route("/about")
+def about():
+    return render_template("about.html", templatecoordinates=[])
+
+@app.route("/work")
+def work():
+    return render_template("work.html", templatecoordinates=[])
+
 @app.route("/", methods=['POST'])
 def sign_up():
     form_data = request.form
@@ -35,7 +43,7 @@ def pull_tweets(searchterm):
     auth.set_access_token('243267961-vf1h9TNE8Dseec9kRuKDeQ5iRHVVQ4FfaPbJyPgh', 'LX80T16mOELwisU9VGo8zEO7syLAUfov2TllMaph8smmi')
     twitter_api = tweepy.API(auth)
 
-    result = tweepy.Cursor(twitter_api.search, q=searchterm, geocode="51.510523,-0.140592,500km").items(10) # change this back to 1000 at some point
+    result = tweepy.Cursor(twitter_api.search, q=searchterm, geocode="51.510523,-0.140592,4000km").items(20) # change this back to 1000 at some point
 
     for tweet in result: 
         if tweet.place != None:
