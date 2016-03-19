@@ -32,7 +32,7 @@ h6 {
 }
 
 .intro-header {
-    padding-top: 2px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 5px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 25px;
     text-align: left;
     color: #1d1d1e;
@@ -136,7 +136,7 @@ h6 {
 
 
 .banner {
-    padding: 60px 0;
+    padding: 30px 0;
     color: #DADADB;
     background-color: black;
     background-size: cover;
@@ -188,7 +188,7 @@ h6 {
 }
 
 footer {
-    padding: 10px 0;
+    padding: 5px 0;
     background-color: black;
     color: #DADADB;
 }
