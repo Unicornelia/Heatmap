@@ -18,7 +18,7 @@
    <!-- Bootstrap Core CSS -->
 
     <link href="{{ url_for("static", filename="css/bootstrap.css") }}" rel="stylesheet">
- 
+
    <!-- Custom CSS -->
    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="css/heatmap.css") }}">
 
@@ -40,8 +40,6 @@
 
     <!-- putting in the form for tweet subject-->
 
-
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -59,13 +57,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="about.html" target="_blank">About</a>
+                        <a href="/about">About</a>
                     </li>
                     <li>
-                        <a href="work" target="work.html">Behind the idea</a>
+                        <a href="/work">Behind the idea</a>
                     </li>
                     <li>
-                        <a href="#contact" target="_blank">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -93,11 +91,11 @@
                             </form>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-lg-10">
                     <div class="intro-map">
                         <div id='map'>
-                           
+
                             <!-- <iframe width='100%' height='700px'  src='https://a.tiles.mapbox.com/v4/unicornelia.pbc2l5ki/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoidW5pY29ybmVsaWEiLCJhIjoiY2lsY2hvajVsMDA3NXdnbHpqaWZqaTNmbiJ9.yr-_GVPhMAVONAhT74DJkg'></iframe> -->
                         </div>
 <script>
@@ -115,12 +113,12 @@ var map = L.mapbox.map('map', 'unicornelia.pbc2l5ki'),
     // Add each marker point to the heatmap.
 
 
-//creates a loop where i is each separate tweet 
+//creates a loop where i is each separate tweet
 for (var i = 0; i < coordinates.length; i++) {
     var latlng = L.latLng(coordinates[i][1], coordinates[i][0]);
     console.log('Adding', latlng, 'to the map.');
     heat.addLatLng(latlng);
-}    
+}
 // });
 </script>
 
@@ -133,7 +131,6 @@ for (var i = 0; i < coordinates.length; i++) {
     <!-- /.intro-header -->
 
     <!-- Page Content -->
-
 
 
     <a  name="contact"></a>

@@ -33,7 +33,6 @@ def sign_up():
     return render_template("index.html", templatecoordinates=coordinates, searchterm=searchterm)
 
 
-   
 
 #define function which sends search term to tweepy to return tweets and geolocation
 
@@ -45,7 +44,7 @@ def pull_tweets(searchterm):
 
     result = tweepy.Cursor(twitter_api.search, q=searchterm, geocode="51.510523,-0.140592,4000km").items(20) # change this back to 1000 at some point
 
-    for tweet in result: 
+    for tweet in result:
         if tweet.place != None:
             coordinates.append(tweet.place.bounding_box.coordinates[0][0])
 
@@ -56,7 +55,7 @@ def pull_tweets(searchterm):
 #splitting up the coordinates array so that we can flip it round. THIS REALLY DOESN'T WORK
 
 # def splitcoordinates(l, n):
-    
+
 #     for i in tweetcoordinates(0, l, n):
 #         return [n,l]
 
@@ -84,4 +83,3 @@ if __name__ == "__main__":
 #               'tweet': row['tweet']
 #               'geolocation': row['geolocation']
 #           }
-
